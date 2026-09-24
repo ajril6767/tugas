@@ -4,16 +4,31 @@
 using namespace std;
 
 int main() {
-    string nama[4]={"miko","mila","niken","anjar"};
-    int nilai[4]={67,78,90,85};
+    string nama[4];
+    int nilai1[4];
+    int nilai2[4];
     int i;
+    float r;
     for(i=0;i<4;i++)
         {
-          cout<<"___________"<<endl;
+         cout<<"masukan nama mu";
+         cin>>nama[i];
+         cout<<"masukan nilai mu";
+         cin>>nilai1[i];
+         cout<<"masukan nilai mu";
+         cin>>nilai2[i];
+        }
+    for(i=0;i<4;i++)
+        {
+          cout<<"________________________________________"<<endl;
           cout<<"namanya adalah"<<endl;
           cout<<nama[i]<<endl;
           cout<<"nilai"<<endl;
-          cout<<nilai[i]<<endl;
+          cout<<nilai1[i]<<endl;
+          cout<<"rata rata ujian nasional mu adalah"<<endl;
+          r=(nilai1[i]+nilai2[i])/2.0;
+          cout<<r<<endl;
         }
     return 0;
+
 }
